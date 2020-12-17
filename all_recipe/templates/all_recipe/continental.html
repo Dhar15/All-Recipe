@@ -1,0 +1,74 @@
+{% extends 'all_recipe/layout.html' %}
+{% load static %}
+{% block title %}
+    Continental Dishes 
+{% endblock %}
+
+{% block css %}
+    <style>
+        body {
+            background-image: linear-gradient(#feada6, #f5efef);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-container > div {
+            width: 400px;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 12px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        img {
+            height: 200px;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <a href="{% url 'index' %}"> <i class="fa fa-home" style="float: left; font-size: 35px; padding: 10px; margin-left: 10px;"></i> </a>
+
+    <h1 style="text-align:center; font-style: italic;"> Continental Dishes </h1>
+
+    <div class="flex-container">
+        <div>
+            <button onclick="window.location='{% url 'bruschetta' %}';">
+            <img src="{% static 'all_recipe/images/continental/bruschetta.jpg' %}" alt="Bruschetta" style="width:100%">
+            <h3> Bruschetta(Italian) </h3>
+            </button>
+        </div>
+        <div>
+            <button onclick="window.location='{% url 'margherita' %}';">
+            <img src="{% static 'all_recipe/images/continental/margherita.jpg' %}" alt="Margherita" style="width:100%">
+            <h3> Margherita Pizza(Italian) </h3>
+            </button>
+        </div>
+        <div >
+            <button onclick="window.location='{% url 'schezwanfriedrice' %}';">
+            <img src="{% static 'all_recipe/images/continental/schezwanfriedrice.jpg' %}" alt="Schezwan Fried Rice" style="width:100%">
+            <h3> Schezwan Fried Rice(Chinese) </h3>
+            </button>
+        </div>
+        <div >
+            <button onclick="window.location='{% url 'chickenmanchurian' %}';">
+            <img src="{% static 'all_recipe/images/continental/chickenmanchurian.jpeg' %}" alt="Chicken Manchurian" style="width:100%">
+            <h3> Chicken Manchurian(Indo-Chinese) </h3>
+            </button>
+        </div>
+        <div >
+            <button onclick="window.location='{% url 'batterfriedfish' %}';">
+            <img src="{% static 'all_recipe/images/continental/batterfriedfish.jpg' %}" alt="Batter Fried Fish" style="width:100%">
+            <h3> Batter Fried Fish(English) </h3>
+            </button>
+        </div>
+    </div>
+{% endblock %}

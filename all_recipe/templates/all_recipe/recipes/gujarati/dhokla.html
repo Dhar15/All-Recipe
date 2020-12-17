@@ -1,0 +1,54 @@
+{% extends "all_recipe/recipes/recipeLayout.html" %}
+{% load static %}
+
+{% block title %}
+    Dhokla Recipe
+{% endblock %}
+
+{% block recipeName %}
+    Dhokla
+
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'all_recipe/images/gujarati/Dhokla.png' %}" alt="Dhokla" class="center">
+{% endblock %}
+
+{% block description %}
+ A popular Gujarati snack, dhokla is one of the most loved snack across the country that is made in various ways. This dhokla recipe is a quick and easy one that is delicious as well as healthy!
+{% endblock %}
+
+{% block prepTime %} 10 Min {%endblock%}
+{% block cookTime %} 30 Min {%endblock%} 
+{% block totalTime %} 40 Min {%endblock%} 
+{% block servings %} 2 people {%endblock%} 
+
+{% block ingredients %}
+    <li>1 Cup gram flour (besan)</li>
+    <li>1 tbsp citric acid</li>
+    <li>1 tbsp sugar</li>
+    <li>to taste salt</li>
+    <li>A pinch of turmeric</li>
+    <li>Water (to make batter)</li>
+    <li>1 tbsp fruit salt/ baking powder (dissolved in water)</li>
+    <li>For the Tadka: </li>
+    <li>1 tbsp oil</li>
+    <li>1/2 tbsp mustard seeds</li>
+    <li>1 Dried red chilli</li>
+    <li>7-8 Curry leaves</li>
+{% endblock %}
+
+{% block recipe %}
+    <ol>
+        <li>In a bowl mix gram flour, citric acid, salt, sugar and turmeric. Add water and make it into a smooth batter with medium thick consistency.</li>
+        <li>In a glass add the fruit salt or baking powder. Add water to it and pour this into the dhokla mixture.</li>
+        <li>Grease the steaming tin with 2 drops of oil and pour the mixture into it. Steam for about 15-20 minutes or till cooked.</li>
+        <li>In a pan, add oil, mustard seeds, curry leaves and red chillies. Let it splutter.</li>
+        <li>Pour the tadka over the prepared dhokla.</li>
+        <li>Cut into pieces and serve</li>
+    </ol>
+{% endblock %}
+
+{% block nutrition %}
+    Energy : 287 cal, Protein : 10.9 g, Carbohydrates : 37.5 g, Fiber : 8.1g
+{% endblock %}

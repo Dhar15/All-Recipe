@@ -1,0 +1,65 @@
+{% extends "all_recipe/recipes/recipeLayout.html" %}
+{% load static %}
+
+{% block title %}
+    Chicken Chettinad Recipe
+{% endblock %}
+
+{% block recipeName %}
+    Chicken Chettinad
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'all_recipe/images/chettinad/Chicken Chettinad.png' %}" alt="chickenchettinad" class="center">
+{% endblock %}
+
+{% block description %}
+    This is one of the best chicken recipes to try at home. A popular chicken curry, cooked in a peppery authentic chettinad paste laced with coconut and onions. Bring some magic to your plate with this southern style chicken dish.
+{% endblock %}
+
+{% block prepTime %} 10 Min {%endblock%}
+{% block cookTime %} 70 Min {%endblock%} 
+{% block totalTime %} 80 Min {%endblock%} 
+{% block servings %} 5 people {%endblock%} 
+
+{% block ingredients %}
+    <li>500 gms chicken</li>
+    <li>75 ml oil</li>
+    <li>150 gms onions</li>
+    <li>100 gms tomatoes</li>
+    <li>2 gms cinnamon sticks</li>
+    <li>2 gms cloves</li>
+    <li>2 gms cardamoms</li>
+    <li>5 gms cumin</li>
+    <li>2 gms curry leaves</li>
+    <li>10 gms turmeric powder</li>
+    <li>Salt</li>
+    <li>25 gms coriander leaves</li>
+    <h2 style="font-size: 150%;">For paste:</h2>
+    <li>100 gms onions</li>
+    <li>50 gms ginger</li>
+    <li>50 gms garlic</li>
+    <li>50 gram fennel seeds</li>
+    <li>20 gms cumin seeds</li>
+    <li>25 gms peppercorns</li>
+    <li>10 gms red chillies</li>
+    <li>100 gms coconut</li>
+{% endblock %}
+
+{% block recipe %}
+    <ol>
+        <li>Grind the ingredients for the paste.</li>
+        <li>Clean and cut the chicken into 16 pieces. Marinate the chicken with the paste.</li>
+        <li>Chop the tomatoes, coriander leaves and the onions.</li>
+        <li>Heat oil and add the cinnamon, cardamom, cloves and cumin, saute.</li>
+        <li>Add the chopped onions and the curry leaves. Saute until the onions are golden.</li>
+        <li>Add the tomatoes and saute for 5 minutes.</li>
+        <li>Add the marinated chicken and turmeric powder. Saute for 10 minutes, sprinkling water at intervals.</li>
+        <li>Add enough salt, cover with a lid and cook until done. Add more chilli or pepper if required.</li>
+        <li>Serve garnished with coriander leaves.</li>
+    </ol>
+{% endblock %}
+
+{% block nutrition %}
+    Energy : 2131 cal, Protein : 22.9 g, Carbohydrates : 27.1 g, Fiber : 16.1g
+{% endblock %}

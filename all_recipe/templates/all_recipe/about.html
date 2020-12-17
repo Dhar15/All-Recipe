@@ -1,0 +1,47 @@
+{% extends 'all_recipe/layout.html' %}
+{% load static %}
+{% block title %}
+     About Us
+{% endblock %}
+
+{% block body %}
+
+<a href="{% url 'index' %}"> <i class="fa fa-home" style="float: left; font-size: 35px; padding: 10px;"></i> </a>
+
+<h2 style="font-family:Cambria; font-size: 40px; text-align: center; font-style: italic; margin-right: 40px;"> Meet our team </h2>
+
+<div class="card-body p-5 d-flex justify-content-around flex-wrap">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'all_recipe/profile/kshitij.jpg' %}" alt="Kshitij Dhar">
+            <div class="card-body">
+            <h5 class="card-title" style="text-align: center; color: #3A2EE0;">Kshitij Dhar </h5>
+            <p class="card-text"> Software Engineer | Web Developer | Android Developer | Data Analytics  </p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'all_recipe/profile/bhavika.jpeg' %}" alt="Bhavika Arigala">
+            <div class="card-body">
+            <h5 class="card-title" style="text-align: center; color: #3A2EE0;">Bhavika Arigala </h5>
+            <p class="card-text"> Software Engineer | Web Developer | Data Analytics  </p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'all_recipe/profile/visvesh.jpeg' %}" alt="MS Visvesh">
+            <div class="card-body">
+            <h5 class="card-title" style="text-align: center; color: #3A2EE0;">MS Visvesh </h5>
+            <p class="card-text"> Software Developer | Web Developer | Machine Learning  </p>
+            </div>
+        </div>
+</div>
+
+<div>
+    <h6 style="text-align: center;"> Connect with us: &nbsp; &nbsp; &nbsp;
+         <a href="https://www.linkedin.com/in/kshitij-dhar-493a76164/" target="_blank" style="color: #B148D2; text-decoration: underline;">LinkedIn</a> &nbsp; 
+         <a href="https://github.com/Dhar15" target="_blank" style="color: #B148D2; text-decoration: underline;">GitHub</a> &nbsp; 
+         <a href="https://www.instagram.com/kshitij_dhar/" target="_blank" style="color:#B148D2; text-decoration: underline;">Instagram</a> &nbsp;
+         <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=all_recipe_support@gmail.com" target="_blank" style="color: #B148D2; text-decoration: underline;">Mail us</a> </h6>
+</div>
+
+{% endblock %}

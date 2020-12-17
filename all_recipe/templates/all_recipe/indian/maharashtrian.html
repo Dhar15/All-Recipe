@@ -1,0 +1,58 @@
+{% extends 'all_recipe/layout.html' %}
+{% load static %}
+{% block title %}
+    Maharashtrian Dishes
+{% endblock %}
+
+{% block body %}
+
+    <a href="{% url 'index' %}"> <i class="fa fa-home" style="float: left; font-size: 35px; padding: 10px; margin-left: 10px;"></i> </a>
+
+    <h1 style="text-align:center; font-style: italic;"> Maharashtrian Recipes </h1>
+
+    <div style="padding: 30px;">
+
+        <div class="row">
+            <div class="column">
+            <button onclick="window.location='{% url 'aamti' %}';">
+                <img src="{% static 'all_recipe/images/maharashtrian/Aamti.png' %}" alt="Aamti" style="width:100%">
+                <h3> Aamti </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'pavBhaji' %}';">
+                <img src="{% static 'all_recipe/images/maharashtrian/Pav Bhaji.png' %}" alt="Pav Bhaji" style="width:100%">
+                <h3> Pav Bhaji </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'pudachiWadi' %}';">
+                <img src="{% static 'all_recipe/images/maharashtrian/Pudachi Wadi.png' %}" alt="Pudachi Wadi" style="width:100%">
+                <h3> Pudachi Wadi </h3>
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <button onclick="window.location='{% url 'batataVada' %}';">
+                <img src="{% static 'all_recipe/images/maharashtrian/Batata Vada.png' %}" alt="Batata Vada" style="width:100%">
+                <h3> Batata Vada </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'puranPoli' %}';">
+                <img src="{% static 'all_recipe/images/maharashtrian/Puran Poli.png' %}" alt="Puran Poli" style="width:100%">
+                <h3> Puran Poli </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'misalPav' %}';">
+                    <img src="{% static 'all_recipe/images/maharashtrian/Misal Pav.png' %}" alt="Misal Pav" style="width:100%">
+                    <h3> Misal Pav </h3>
+                    </button>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

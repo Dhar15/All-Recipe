@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Feedback </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'all_recipe/feedback.css' %}">
+
+    <script>
+        function show_message() {
+            alert("Thank you, we have recieved your feedback. Returning you to home screen...");
+        }
+    </script>
+</head>
+<body>
+
+<a href="{% url 'index' %}"> <i class="fa fa-home" style="float: right; font-size: 35px;  margin-right: 5px; "></i> </a>
+
+
+<h2>Liked/Disliked something? Let us know here! </h2>    
+<div class="container">    
+
+  <form action="{% url 'feedback' %}" onsubmit="show_message()" method="post">
+    {% csrf_token %}
+    <div style="margin: 10px;">
+        {{ form.as_p }}
+    </div>
+    <input type="submit" value="Submit" style="margin: 10px;"> 
+</form>
+</div>
+
+</body>
+</html>
+

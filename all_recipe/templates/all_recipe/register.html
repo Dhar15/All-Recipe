@@ -1,0 +1,39 @@
+{% extends "all_recipe/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Register Page
+{% endblock %}
+
+{% block css%} {% endblock %}
+
+{% block body %}
+
+    <h2 style="padding: 15px; text-decoration: underline;">Register</h2>
+
+    {% if message %}
+    <div class="alert alert-danger" role="alert">{{ message }}</div>
+    {% endif %}
+
+    <form action="{% url 'register' %}" method="post" style="padding: 15px;">
+        {% csrf_token %}
+        <div class="form-group">
+            <input class="form-control" autofocus type="text" name="username" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="email" name="email" placeholder="Email Address">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" name="confirmation" placeholder="Confirm Password">
+        </div>
+        <input class="btn btn-primary" type="submit" value="Register">
+    </form>
+
+    <span style="padding: 15px;;"> Already have an account? <a href="{% url 'login' %}">Log In here.</a> </span>
+
+    <img src = "{% static 'all_recipe/images/initial_quote.jpg' %}" width="25%" style="position: relative; left: 0; float: right;">   
+
+{% endblock %}

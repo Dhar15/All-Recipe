@@ -1,0 +1,57 @@
+{% extends "all_recipe/recipes/recipeLayout.html" %}
+{% load static %}
+
+{% block title %}
+Bruschetta Recipe
+{% endblock %}
+
+{% block recipeName %}
+Bruschetta
+
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'all_recipe/images/continental/bruschetta.jpg' %}" alt="Bruschetta" class="center">
+{% endblock %}
+
+{% block description %}
+Country bread sliced and topped with different toppings. The evergreen tomato-basil and mushroom-garlic. The classic Italian starter.
+{% endblock %}
+
+{% block prepTime %} 10 Min {%endblock%}
+{% block cookTime %} 25 Min {%endblock%} 
+{% block totalTime %} 35 Min {%endblock%} 
+{% block servings %} 4 people {%endblock%} 
+
+{% block ingredients %}
+    <li>1 loaf of country bread</li>
+    <li>Cloves of garlic</li>
+    <li>2 tomatoes, chopped</li>
+    <li>Basil leaves</li>
+    <li>5 Tbsp of olive oil</li>
+    <li>4 portobello mushrooms sliced</li>
+    <li>1 garlic clove grated</li>
+    <li>1 red chilli , deseeded and chopped</li>
+    <li>1 Tbsp butter</li>
+    <li>Salt and pepper, to taste</li>
+    
+{% endblock %}
+
+{% block recipe %}
+    <ol>
+        <li>Slice the bread into two halves from the center.</li>
+        <li>Cut a clove of garlic, rub on the surface of bread and sprinkle some olive oil on it.</li>
+        <li>Roast in the oven for 5 minutes.</li>
+        <h2 style="font-size: 150%;">For mushroom and garlic topping:</h2>
+        <li>In a pan put butter, oil, garlic, thyme and stir.</li>
+        <li>Add mushrooms, chopped chillies and toss.</li>
+        <li>Add salt, pepper and cook.</li>
+        <li>For tomato and basil topping:</li>
+        <li>In a bowl add chopped tomatoes, chopped basil, salt, pepper, olive oil and mix well .</li>
+        <li>To serve: Place the bread on a tray and pile up the toppings on it and serve.</li>
+    </ol>
+{% endblock %}
+
+{% block nutrition %}
+Carbs: 20g, Fats:7.8g, Protien:6.6g
+{% endblock %}

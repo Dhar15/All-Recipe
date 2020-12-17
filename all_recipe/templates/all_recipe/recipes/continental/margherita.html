@@ -1,0 +1,76 @@
+{% extends "all_recipe/recipes/recipeLayout.html" %}
+{% load static %}
+
+{% block title %}
+Margherita Pizza Recipe
+{% endblock %}
+
+{% block recipeName %}
+Margherita Pizza
+
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'all_recipe/images/continental/margherita.jpg' %}" alt="Margherita Pizza" class="center" height="450px">
+{% endblock %}
+
+{% block description %}
+Margherita Pizza is to many the true Italian flag. Named after the Queen of Naples, Margherita was created resembling the colors of the Italian flag, red (tomato), white (mozzarella) and green (basil) by chef Raffaele Esposito of Pizzeria Brandi and his wife. Since then the classic Margherita pizza with mozzarella cheese and basil leaves has never disappointed anyone.
+{% endblock %}
+
+{% block prepTime %} 15 Min {%endblock%}
+{% block cookTime %} 25 Min {%endblock%} 
+{% block totalTime %} 40 Min {%endblock%} 
+{% block servings %} 2 people {%endblock%} 
+
+{% block ingredients %}
+    <li>For Pizza dough:</li>
+    <li>500 gms flour</li>
+    <li>Salt</li>
+    <li>300 ml tepid Water</li>
+    <li>7 gms dried yeast</li>
+    <li>1/2 tsp sugar</li>
+    <li>30 ml olive oil</li>
+    <li>Extra virgin olive oil</li>
+    <li>For the topping:</li>
+    <li>Passata sauce</li>
+    <li>1 cup Mozzarella cheese, grated</li>
+    <li>Handful of basil leaves</li>
+    <li>Pepper</li>
+    <li>Extra virgin olive oil</li>
+    
+    
+{% endblock %}
+
+{% block recipe %}
+    <ol>
+        <h2 style="font-size: 150%;">Prepare the pizza dough:</h2>
+        <li>Sieve flour with salt and add yeast to tepid water and stir in sugar. Leave aside for 6 to 8 minutes.</li>
+        <li>In a mixing bowl, create a well in the middle of the flour mixture and add 100 ml of yeast mixture and 15 ml olive oil.</li>
+        <li>Add in the rest of yeast mixture and remaining olive oil.</li>
+        <li>Flour the kneading surface so that the dough does not stick.</li>
+        <li>Mix together with your fingers till you have a dough. Knead for 10 minutes till you have an elastic, even product.</li>
+        <h2 style="font-size: 150%;">Preparing the dough:</h2>
+        <li>Place the dough in a bowl and drizzle generously with extra virgin olive oil.</li>
+        <img src="{% static 'all_recipe/images/continental/pizza1.png' %}" alt="pizza1" class="smol">
+        <li>Cover bowl with cling film and place in a warm area to prove for 50 minutes.</li>
+        <li>After the dough is proved, bash the air out and cut into small pieces for individual pizzas.</li>
+        <li>Dust the work surface and rolling pin with some flour before rolling out the dough.</li>
+        <img src="{% static 'all_recipe/images/continental/pizza2.png' %}" alt="pizza2" class="smol">
+        <h2 style="font-size: 150%;">Prepare the topping:</h2>
+        <li>Pre-heat oven at its highest mark and flour your baking tray.</li>
+        <li>Now, using a rolling pin, roll out the freshly made pizza dough and place on the tray.</li>
+        <li>Spread a thin layer of passata sauce and cover with mozarella cheese and sprinkle basil leaves.</li>
+        <img src="{% static 'all_recipe/images/continental/pizza3.png' %}" alt="pizza3" class="smol">
+        <li>Put the tray into the oven for 10 to 12 minutes.</li>
+        <li>After the pizza is baked remove from the oven and drizzle extra virgin olive oil and some pepper.</li>
+        <li>Garnish with fresh basil and cut into slices.</li>
+        
+       
+
+    </ol>
+{% endblock %}
+
+{% block nutrition %}
+Carbs: 23g, Fats:13g, Cholesterol:40mg, Protien:14g
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "all_recipe/recipes/recipeLayout.html" %}
+{% load static %}
+
+{% block title %}
+    Amritsari Fish Recipe
+{% endblock %}
+
+{% block recipeName %}
+    Amritsari Fish
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'all_recipe/images/punjabi/Amritsari Fish.png' %}" alt="amritsarifish" class="center">
+{% endblock %}
+
+{% block description %}
+    This is an easy to make Amritsari fish recipe. Fish coated in a batter and deep fried. Garnish with garam masala and lemon juice. Serve hot.
+{% endblock %}
+
+{% block cookTime %} 20 Min {%endblock%} 
+{% block totalTime %} 20 Min {%endblock%} 
+{% block servings %} 2 people {%endblock%} 
+
+{% block ingredients %}
+    <li>1 kg singhada fish</li>
+    <li>Salt to taste</li>
+    <h3><u>>For the batter:</u></h3>
+    <li>1 cup gram flour</li>
+    <li>2 tsp garam masala</li>
+    <li>2 tsp cumin powder</li>
+    <li>1 tsp red chilli powder</li>
+    <li>Salt to taste</li>
+    <li>1 tsp turmeric powder</li>
+    <li>Water</li>
+    <li>Lemon juice to taste</li>
+    <li>Oil, for deep frying</li>
+{% endblock %}
+
+{% block recipe %}
+    <h3 style="font-size: 150%;">For the batter:</h3>
+    <ol>
+        <li>In a bowl add gram flour, garam masala, cumin powder, red chilli powder, salt , turmeric powder and enough water to make the batter of coating consistency. Mix it well. The batter is ready.</li>
+    </ol>    
+    <h4 style="font-size: 150%;">For the main preparation:</h4>
+    <ol>
+        <li>Clean the fish and slice it into pieces. Then add salt and leave it for about 3 hours.</li>
+        <li>Wash off the salt and coat the fish pieces with the prepared batter.</li>
+        <li>Deep fry till it is done. Machchli Amritsari is ready to eat.</li>
+        <li>Garnish with garam masala and lemon juice.</li>
+        <li>Serve hot.</li>
+    </ol>
+{% endblock %}
+
+{% block nutrition %}
+    Energy : 1289 cal, Protein : 21.4 g, Carbohydrates : 19.5 g, Fiber : 13.1g
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends 'all_recipe/layout.html' %}
+{% load static %}
+
+{% block title %}
+    Andhra Dishes
+{% endblock %}
+
+{% block body %}
+
+    <a href="{% url 'index' %}"> <i class="fa fa-home" style="float: left; font-size: 35px; padding: 10px; margin-left: 10px;"></i> </a>
+
+    <h1 style="text-align:center; font-style: italic;"> Andhra Recipes </h1>
+
+    <div style="padding: 30px;">
+
+        <div class="row">
+            <div class="column">
+                <button onclick="window.location='{% url 'pepperChicken' %}';">
+                <img src="{% static 'all_recipe/images/andhra/Andhra Pepper Chicken.png' %}" alt="Pepper Chicken" style="width:100%">
+                <h3> Andhra Pepper Chicken </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'andhraChicken' %}';">
+                <img src="{% static 'all_recipe/images/andhra/Andhra Style Chicken Curry.png' %}" alt="Chicken Curry" style="width:100%">
+                <h3> Andhra Style Chicken Curry </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'andhraBhindi' %}';">
+                <img src="{% static 'all_recipe/images/andhra/Crispy Andhra Bhindi.png' %}" alt="Bhindi" style="width:100%">
+                <h3> Crispy Andhra Bhindi </h3>
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <button onclick="window.location='{% url 'hyderabadiBiriyani' %}';">
+                <img src="{% static 'all_recipe/images/andhra/Hyderabadi Biriyani.png' %}" alt="Hyderabadi Biriyani" style="width:100%">
+                <h3> Hyderabadi Biriyani </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'panasaPuttu' %}';">
+                <img src="{% static 'all_recipe/images/andhra/Panasa Puttu Koora (Andhra Jackfruit Curry).png' %}" alt="Jackfruit Curry" style="width:100%">
+                <h3> Andhra Jackfruit Curry </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'kebabs' %}';">
+                    <img src="{% static 'all_recipe/images/andhra/Shikampuri Kebabs.png' %}" alt="Kebabs" style="width:100%">
+                    <h3> Shikampuri Kebabs </h3>
+                    </button>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

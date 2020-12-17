@@ -1,0 +1,62 @@
+{% extends "all_recipe/layout.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+
+    {% block title %} All Recipe Home Page {% endblock %}
+    {% block css %} 
+        <link rel="stylesheet" href="{% static 'all_recipe/main.css' %}"> 
+    {% endblock %} 
+
+    {% block script %}
+        <script type="text/javascript" src="{% static 'all_recipe/main.js' %}"> </script>
+    {% endblock %}
+
+    {% block body %}
+
+        <header>
+            <span style="font-size:30px;cursor:pointer; margin-top: 20px; margin-left: 10px;" onclick="openNav()">&#9776; </span>
+            <h2 id="heading"> ALL RECIPE COOKBOOK </h2>
+        </header>
+
+        <div id="sideNav" class="sidenav"> 
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="width: 10%; height: 5px;">&times;</a>
+
+            <div>
+            <i class="fa fa-user-circle-o fa-10x"></i>
+            <h2 class="mail">{{ user }}</h2>
+            </div>
+
+            <div style="border-top: 1px solid purple; margin-bottom: 10px;"></div>
+            
+            <button class="dropdown-btn" onclick="dropDown()"> <i class="fa fa-cutlery fa-sm" aria-hidden="true"> </i> &nbsp; Indian
+                <i class="fa fa-caret-down fa-sm" aria-hidden="true" ></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="{% url 'kashmiri' %}">Kashmiri</a>
+                <a href="{% url 'andhra' %}">Andhra</a>
+                <a href="{% url 'gujarati' %}">Gujarati</a>
+                <a href="{% url 'maharashtrian' %}">Maharashtrian</a>
+                <a href="{% url 'punjabi' %}">Punjabi</a>
+                <a href="{% url 'chettinad' %}">Chettinad</a>
+            </div>
+            <hr/>
+            <button class ="dropdown-btn" onclick="window.location='{% url 'continental' %}';">
+            <i class="fa fa-plane fa-sm" aria-hidden="true"> </i> &nbsp;Continental
+            </button>
+            <hr/>
+            <button class ="dropdown-btn" onclick="window.location='{% url 'feedback' %}'">
+            <i class="fa fa-comments fa-sm" aria-hidden="true"> </i> &nbsp;Feedback
+            </button>
+            <hr/>
+            <button class ="dropdown-btn" onclick="window.location='{% url 'about' %}'">
+            <i class="fa fa-user-secret fa-sm" aria-hidden="true"> </i> &nbsp;About Us
+            </button>
+            <hr/>
+            <button class ="dropdown-btn" onclick="window.location='{% url 'logout' %}'">
+                <i class="fa fa-sign-out fa-sm" aria-hidden="true"> </i> &nbsp;LogOut
+            </button>
+        </div>
+
+    {% endblock %}
+</html>

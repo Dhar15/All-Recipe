@@ -1,0 +1,55 @@
+{% extends "all_recipe/recipes/recipeLayout.html" %}
+{% load static %}
+
+{% block title %}
+    Crispy Andhra Bhindi Recipe
+{% endblock %}
+
+{% block recipeName %}
+    Crispy Andhra Bhindi
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'all_recipe/images/andhra/Crispy Andhra Bhindi.png' %}" alt="crispyandhrabhindi" class="center">
+{% endblock %}
+
+{% block description %}
+Crunchy deep fried bhindi sprinkled with roasted masala, a perfect lunch recipe that is quick, easy and fuss-free.
+{% endblock %}
+
+{% block prepTime %} 10 Min {%endblock%}
+{% block cookTime %} 25 Min {%endblock%} 
+{% block totalTime %} 35 Min {%endblock%} 
+{% block servings %} 4 people {%endblock%} 
+
+{% block ingredients %}
+    <li>500 Gram Bhindi / okra</li>
+    <li>For deep frying Oil</li>
+    <li>2 tbsp Cumin seeds</li>
+    <li>2 tbsp Coriander seeds</li>
+    <li>2 tsp Peanuts</li>
+    <li>1 tbsp Bengal gram/Chana dal</li>
+    <li>7-8 Red chillies</li>
+    <li>1 tbsp Garlic cloves (crushed)</li>
+    <li>2 tbsp Dessicated coconut, grated</li>
+    <li>1 tsp Salt</li>
+{% endblock %}
+
+{% block recipe %}
+    <ol>
+        <li>Dry roast cumin seeds, coriander seeds, peanuts, chana dal and red chillies together in a pan. Keep aside to cool and then grind them together.</li>
+        <img src="{% static 'all_recipe/images/Andhra/bhindi1.png' %}" alt="bhindi1" class="smol">
+        <li>Mix in the salt, coconut and crushed garlic to the ground mixture. (This masala can be stored for six months in an air tight jar in a refrigerator.)</li>
+        <img src="{% static 'all_recipe/images/Andhra/bhindi2.png' %}" alt="bhindi2" class="smol">
+        <li>Heat oil and deep fry the bhindi.</li>
+        <img src="{% static 'all_recipe/images/Andhra/bhindi3.png' %}" alt="bhindi3" class="smol">
+        <li>Remove the bhindi from oil, put in a bowl and sprinkle the masala over it.</li>
+        <img src="{% static 'all_recipe/images/Andhra/bhindi4.png' %}" alt="bhindi4" class="smol">
+        <li>Mix well and serve hot.</li>
+        <img src="{% static 'all_recipe/images/Andhra/bhindi5.png' %}" alt="bhindi5" class="smol">
+    </ol>
+{% endblock %}
+
+{% block nutrition %}
+    Energy : 301 cal, Protein : 5.7 g, Carbohydrates : 27.1 g, Fiber : 16.3g
+{% endblock %}

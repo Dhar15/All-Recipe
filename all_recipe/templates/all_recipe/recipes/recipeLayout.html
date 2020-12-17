@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> {% block title%} {% endblock %} </title>
+	<link rel="stylesheet" href="{% static 'all_recipe/recipe.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fd0a57b13d71d0018432326&product=inline-share-buttons" async="async"></script>
+  </head>
+  <body>
+
+	<a href="javascript:history.back()" title="Go back"> <i class="fa fa-arrow-left" style="float: left; font-size: 35px; padding: 10px; margin-left: 5px; color: #874794;"></i> </a>
+	<a href="{% url 'index' %}" title="Home"> <i class="fa fa-home" style="float: left; font-size: 35px; padding: 10px; margin-left: 5px;"></i> </a>
+	
+	<h1 style="font-size:250%;">{% block recipeName %} {% endblock %}</h1>
+	
+	{% block image %} {% endblock %}
+
+	<section>
+		<p class="desc">
+			 {% block description %} {% endblock %}
+		</p>
+	</section>
+	<hr />
+
+	
+	<div class="info">
+		<h2 style="font-size:150%;">&#9733; Nutrition Info &#9733;</h2>
+		<div>
+          <p style="font-size:150%; font-style: italic;">PREP TIME  : {% block prepTime %} {%endblock%} </p>
+          <p style="font-size:150%; font-style: italic;">COOK TIME  : {% block cookTime %} {%endblock%} </p>
+		  <p style="font-size:150%; font-style: italic;">TOTAL TIME : {% block totalTime %} {%endblock%} </p>
+		  <p style="font-size:150%; font-style: italic;">SERVINGS   : {% block servings %} {%endblock%}  </p>
+		</div>
+	</div>
+
+	<section>
+		<h2 style="font-size:150%; font-family: cursive;">Ingredients</h2>
+		<ul>
+			{% block ingredients %} {% endblock %}
+		</ul>
+	</section>
+	<hr />
+
+	<section>
+        <h3 style="font-size:150%; font-family: cursive;">Recipe</h3>
+		{% block recipe %} {% endblock %}
+    </section>
+    <hr />
+    
+    <section> 
+        <h3 style="font-size:150%; font-family: cursive;">Nutrition Facts </h3>
+        <h4 style="font-weight: bold;"> Per Serving: </h4>
+        {% block nutrition %} {% endblock %}
+	</section>
+
+	<br /> <br/> <br/>
+
+	<h5 style="text-align: center; color: purple;"> Share this recipe with your friends: </h5>
+
+	<div class="sharethis-inline-share-buttons"></div>
+	
+  </body>
+</html>

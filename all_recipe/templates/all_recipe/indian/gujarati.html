@@ -1,0 +1,58 @@
+{% extends 'all_recipe/layout.html' %}
+{% load static %}
+{% block title %}
+    Gujarati Dishes
+{% endblock %}
+
+{% block body %}
+
+    <a href="{% url 'index' %}"> <i class="fa fa-home" style="float: left; font-size: 35px; padding: 10px; margin-left: 10px;"></i> </a>
+
+    <h1 style="text-align:center; font-style: italic;"> Gujarati Recipes </h1>
+
+    <div style="padding: 30px;">
+
+        <div class="row">
+            <div class="column">
+                <button onclick="window.location='{% url 'dalDhokli' %}';">
+                <img src="{% static 'all_recipe/images/gujarati/Dal Dhokli.png' %}" alt="Dal Dhokli" style="width:100%">
+                <h3> Dal Dhokli </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'dhokla' %}';">
+                <img src="{% static 'all_recipe/images/gujarati/Dhokla.png' %}" alt="Dhokla" style="width:100%">
+                <h3> Dhokla </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'thepla' %}';">
+                <img src="{% static 'all_recipe/images/gujarati/Methi Ka Thepla.png' %}" alt="Thepla" style="width:100%">
+                <h3> Methi Ka Thepla </h3>
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <button onclick="window.location='{% url 'khandvi' %}';">
+                <img src="{% static 'all_recipe/images/gujarati/Khandvi.png' %}" alt="Khandvi" style="width:100%">
+                <h3> Khandvi </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'aamShrikand' %}';">
+                <img src="{% static 'all_recipe/images/gujarati/Aam Shrikhand with Mango Salad.png' %}" alt="Mango Salad" style="width:100%">
+                <h3> Aam Shrikhand with Mango Salad </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'handvo' %}';">
+                    <img src="{% static 'all_recipe/images/gujarati/Handvo.png' %}" alt="Handvo" style="width:100%">
+                    <h3> Handvo </h3>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

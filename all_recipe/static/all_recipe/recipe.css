@@ -1,0 +1,89 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1 {
+  text-align: center;
+}
+        
+.desc {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.smol {
+  width: 200px;
+  height: 130px;
+  margin-left: 50px;
+}
+
+body {
+  background-image: linear-gradient(#feada6, #f5efef);
+}
+
+.info {
+  width: 20%;
+  padding-left: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 60px;
+  font-style: italic;
+  border: 1px solid black;
+}
+
+li {
+  padding: 5px;
+}
+
+#share-buttons { 
+  text-align: center; 
+  border: 0; 
+  box-shadow: 0; 
+  display: block; 
+  margin-right: 5px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  margin: 10px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: lime;
+  color: white;
+}
+
+.fa-pinterest {
+  background: red;
+  color:white;
+}

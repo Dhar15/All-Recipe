@@ -1,0 +1,55 @@
+{% extends "all_recipe/recipes/recipeLayout.html" %}
+{% load static %}
+
+{% block title %}
+    Dal Makhani Recipe
+{% endblock %}
+
+{% block recipeName %}
+    Dal Makhani
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'all_recipe/images/punjabi/Dal Makhani.png' %}" alt="dalmakhani" class="center">
+{% endblock %}
+
+{% block description %}
+    A punjabi staple dish, Dal Makhani is the absolute favorite recipe that can easily be cooked to perfection at home. First created by Sardar Singh, Dal Makhani has now become the quintessential Indian dish with many variations found in different regions of our country as well as abroad. It is often made in Indian homes for dinner and can also be made for dinner parties. You will often find this dal makhani on many restaurant menus as well. A luscious, creamy dal recipe loaded with butter, this can be served with naan or paratha or accompany with some cooked rice.
+{% endblock %}
+
+{% block prepTime %} 10 Min {%endblock%}
+{% block cookTime %} 40 Min {%endblock%} 
+{% block totalTime %} 50 Min {%endblock%} 
+{% block servings %} 4 people {%endblock%} 
+
+{% block ingredients %}
+    <li>2 Cups sabut urad dal</li>
+    <li>8 cups water</li>
+    <li>2 tbsp salt</li>
+    <li>1 tbsp ginger, sliced</li>
+    <li>2 tbsp butter</li>
+    <li>1 tbsp oil</li>
+    <li>2 tsp shahi jeera</li>
+    <li>1 tsp kasoori meethi</li>
+    <li>2 cups tomato puree</li>
+    <li>1 tsp chilli powder</li>
+    <li>1 tsp sugar</li>
+    <li>1/2 cups cream</li>
+    <li>for garnishing green chillies (slit lengthwise)</li>
+{% endblock %}
+
+{% block recipe %}
+    <ol>
+        <li>To the dal, add water, 1 Tbsp salt and ginger. Cook until dal becomes tender.</li>
+        <li>In a heavy based pan, heat butter and oil. Add shahi jeera and kasoori methi. When they begin to splutter, add tomato puree, remaining salt, chilli powder and sugar.</li>
+        <li>Stir-fry over high flame, till the oil separates.</li>
+        <li>Add cooked dal and bring to boil. The consistency should be such that the dal should move around freely when stirred, otherwise add a little water.</li>
+        <img src="{% static 'all_recipe/images/Punjabi/dalmakhani1.png' %}" alt="boileddal" class="smol">
+        <li>Leave to simmer, uncovered, till well blended. Stir-in cream and once it gets heated through, serve immediately, garnished with green chillies</li>
+        <img src="{% static 'all_recipe/images/Punjabi/dalmakhani2.png' %}" alt="cookeddal" class="smol">
+    </ol>
+{% endblock %}
+
+{% block nutrition %}
+    Energy : 1087 cal, Protein : 11.9 g, Carbohydrates : 22.1 g, Fiber : 19.6g
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'all_recipe/layout.html' %}
+{% load static %}
+{% block title %}
+    Kashmiri Dishes
+{% endblock %}
+
+{% block body %}
+
+    <a href="{% url 'index' %}"> <i class="fa fa-home" style="float: left; font-size: 35px; padding: 10px; margin-left: 10px;"></i> </a>
+
+    <h1 style="text-align:center; font-style: italic;"> Kashmiri Recipes </h1>
+
+    <div style="padding: 30px;">
+
+        <div class="row">
+            <div class="column">
+                <button onclick="window.location='{% url 'dumAloo' %}';">
+                <img src="{% static 'all_recipe/images/kashmiri/Dum Aloo.png' %}" alt="Dum Aloo" style="width:100%">
+                <h3> Dum Aloo </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'saag' %}';">
+                <img src="{% static 'all_recipe/images/kashmiri/Kashmiri Saag.png' %}" alt="Kashmiri Saag" style="width:100%">
+                <h3> Kashmiri Saag </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'muttonRibs' %}';">
+                <img src="{% static 'all_recipe/images/kashmiri/Kashmiri style mutton ribs.png' %}" alt="Mutton Ribs" style="width:100%">
+                <h3> Kashmiri Mutton Ribs </h3>
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <button onclick="window.location='{% url 'khatteBaingan' %}';">
+                <img src="{% static 'all_recipe/images/kashmiri/Khatte Baingan.png' %}" alt="Khatte Baingan" style="width:100%">
+                <h3> Khatte Baingan </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'roganJosh' %}';">
+                <img src="{% static 'all_recipe/images/kashmiri/Mutton Rogan Josh.png' %}" alt="Rogan Josh" style="width:100%">
+                <h3> Rogan Josh </h3>
+                </button>
+            </div>
+            <div class="column">
+                <button onclick="window.location='{% url 'nadrooYakhni' %}';">
+                    <img src="{% static 'all_recipe/images/kashmiri/Nadroo Yakhni.png' %}" alt="Nadroo Yakhni" style="width:100%">
+                    <h3> Nadroo Yakhni </h3>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

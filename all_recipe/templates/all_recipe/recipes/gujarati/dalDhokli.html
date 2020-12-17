@@ -1,0 +1,61 @@
+{% extends "all_recipe/recipes/recipeLayout.html" %}
+{% load static %}
+
+{% block title %}
+Dal Dhokli Recipe
+{% endblock %}
+
+{% block recipeName %}
+Dal Dhokli
+
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'all_recipe/images/gujarati/Dal Dhokli.png' %}" alt="Dal Dhokli" class="center">
+{% endblock %}
+
+{% block description %}
+Daal Dhokli' is a popular Gujarati curry. Savory dumplings made of whole wheat flour simmered in tuvar daal.
+{% endblock %}
+
+{% block prepTime %} 10 Min {%endblock%}
+{% block cookTime %} 30 Min {%endblock%} 
+{% block totalTime %} 40 Min {%endblock%} 
+{% block servings %} 4 people {%endblock%} 
+
+{% block ingredients %}
+    <li>For the dal:</li>
+    <li>1 cup tuvar dal</li>
+    <li>2 Tbsp peanuts-soaked in water for 30 minutes</li>
+    <li>5 cloves garlic-chopped</li>
+    <li>4 kokums</li>
+    <li>1 tsp cumin seeds</li>
+    <li>1/2 tsp turmeric powder</li>
+    <li>1/2 tsp chilli powder</li>
+    <li>For the dhokli:</li>
+    <li>1 cup wheat flour (aata)</li>
+    <li>1/2 tsp asafoetida</li>
+    <li>1/2 tsp chilli powder</li>
+    <li>1/2 tsp turmeric</li>
+    <li>Oil</li>
+    <li>Salt to taste</li>
+    
+{% endblock %}
+
+{% block recipe %}
+    <ol>
+        <li>Boil daal and the peanuts in a pressure cooker till soft. Keep aside.</li>
+        <li>Heat 1 Tbsp ghee in a pan and add cumin seeds, garlic, asafoetida and finally, the boiled daal.</li>
+        <li>Add cocum, turmeric powder, chilli powder, sugar and curry leaves. Boil and add salt to taste.</li>
+        <li>Note: You can add vegetables also.</li>
+        <li>To make the dhokli,</li>
+        <li>Mix the flour, salt, turmeric, chilli powder, asafoetida and a little oil and make a stiff dough with water. Knead well and roll out into 10 cm discs.</li>
+        <li>Cut the discs into diamonds or squares with a knife and drop them into the boiling daal mixture.</li>
+        <li>When all the dhokli pieces are put in, boil the daal for a further 15 minutes on a low fire. Garnish with coriander leaves and serve hot.</li>
+
+    </ol>
+{% endblock %}
+
+{% block nutrition %}
+Carbs: 43g, Fats:7.8g, Protien:6.6g
+{% endblock %}

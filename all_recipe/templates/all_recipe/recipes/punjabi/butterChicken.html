@@ -1,0 +1,78 @@
+{% extends "all_recipe/recipes/recipeLayout.html" %}
+{% load static %}
+
+{% block title %}
+    Butter Chicken Recipe
+{% endblock %}
+
+{% block recipeName %}
+    Butter Chicken
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'all_recipe/images/punjabi/Butter Chicken.png' %}" alt="butterchicken" class="center">
+{% endblock %}
+
+{% block description %}
+    Butter Chicken! The name alone can make you want to enjoy this ever-so-popular Indian dish. Butter chicken continues to be a hit among Indians and foreigners alike, especially those who want a taste of authentic Indian cuisine. There are many versions of how this dish was created and most historians agree that the iconic Butter Chicken was invented in the kitchens of Moti Mahal. This recipe of Butter Chicken is easy to follow and makes for an instant conversation-starter!
+{% endblock %}
+
+{% block prepTime %} 10 Min {%endblock%}
+{% block cookTime %} 45 Min {%endblock%} 
+{% block totalTime %} 55 Min {%endblock%} 
+{% block servings %} 4 people {%endblock%} 
+
+{% block ingredients %}
+    <li>400 gms raw chicken</li>
+    <h3><u>For the Marinade:</u> </h3>
+    <li>2 tsp red chilli powder</li>
+    <li>2 tsp ginger and garlic paste</li>
+    <li>2 tsp salt</li>
+    <li>2 tsp lemon juice</li>
+    <li>1/2 cup curd</li>
+    <li>1/2 tsp garam masala</li>
+    <li>1 tsp kasuri methi</li>
+    <li>2 tsp mustard oil</li>
+    <h3><u>For gravy:</u></h3>
+    <li>2 tsp oil</li>
+    <li>2 to taste butter cubes</li>
+    <li>3 gram cloves</li>
+    <li>1 Cinnamon sticks, sliced</li>
+    <li>1 tsp mace</li>
+    <li>7 Cardamom</li>
+    <li>4 Tomatoes, chopped</li>
+    <li>1 tsp garlic</li>
+    <li>1 tsp ginger</li>
+    <li>2 butter cubes</li>
+    <li>1 tsp ginger garlic paste</li>
+    <li>1 1/2 tsp red chilli powder</li>
+    <li>1 tsp kasuri methi</li>
+    <li>2 tsp honey</li>
+    <li>1 green chilli</li>
+    <li>2 tsp cardamom powder</li>
+    <li>1 tbsp cream</li>
+{% endblock %}
+
+{% block recipe %}
+    <h4 style="font-size: 150%;">For marination:</h4>
+    <ol>
+        <li>In a mixing bowl, put raw chicken pieces and add salt, red chilli powder, ginger garlic paste and lemon juice. Mix well.</li>
+        <li>Refrigerate for about 15-20 minutes.</li>
+        <img src="{% static 'all_recipe/images/Punjabi/rawchicken.png' %}" alt="rawchicken" class="smol">
+        <li>Now add curd to the refrigerated mix. Followed by salt, ginger garlic paste, red chilli powder, garam masala, kasuri methi and mustard oil. Mix well and refrigerate again for an hour.</li>
+        <li>Roast the marinated chicken in an oven for about 30 minutes until it is three-fourth done.</li>
+    </ol>
+    <h5 style="font-size: 150%;">Prepare the chicken gravy:</h5>
+    <ol>
+        <li>Heat 2 tsp of oil in a pan with butter.</li>
+        <li>Add cloves, cinnamon stick, mace and cardamom. Saute and then add chopped tomatoes, garlic and ginger. Mix well and then grind well.</li>
+        <li>In another pan, heat another two cubes of butter, along with ginger garlic paste.</li>
+        <li>Add the tomato puree made from the mixture. Now add red chilli powder, kasuri methi, honey and finally the roasted chicken pieces. Let it simmer.</li>
+        <li>Add green chilli, cardamom powder and cream. Mix well.</li>
+        <li>Serve with a teaspoon of cream over.</li>
+    </ol>
+{% endblock %}
+
+{% block nutrition %}
+    Energy : 1281 cal, Protein : 24.9 g, Carbohydrates : 27.1 g, Fiber : 12.9g
+{% endblock %}

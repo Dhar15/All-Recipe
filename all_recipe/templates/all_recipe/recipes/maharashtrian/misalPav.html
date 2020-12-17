@@ -1,0 +1,92 @@
+{% extends "all_recipe/recipes/recipeLayout.html" %}
+{% load static %}
+
+{% block title %}
+Misal Pav Recipe
+{% endblock %}
+
+{% block recipeName %}
+Misal Pav
+
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'all_recipe/images/maharashtrian/Misal Pav.png' %}" alt="Misal Pav" class="center"> 
+{% endblock %}
+
+{% block description %}
+A much-loved Maharashtrian curry that is a fiery melange of potatoes, freshly made spice paste and sprouted beans. Goes best with pav, it is usually served at the breakfast table but also makes for a light meal in itself.{% endblock %}
+
+{% block prepTime %} 15 Min {%endblock%}
+{% block cookTime %} 1hr 10 Min {%endblock%} 
+{% block totalTime %} 1hr 25 Min {%endblock%} 
+{% block servings %} 4 people {%endblock%} 
+
+{% block ingredients %}
+    <li>For paste of gravy/sauce:</li>
+        <li>2 tbsp Oil</li>
+        <li>1 tsp Ginger paste</li>
+        <li>1 tsp Garlic paste</li>
+        <li>1 cup Onion, chopped</li>
+        <li>1 cup Tomato, chopped</li>
+        <li>3/4 cup Coconut, grated</li>
+        <li>To make gravy/sauce (Kat in Marathi):</li>
+        <li>3 tbsp Oil</li>
+        <li> Spice Paste (as above)</li>
+        <li> to taste Salt</li>
+        <li> 1 tsp Red chilly paste</li>
+        <li> 1 tsp Garam masala</li>
+        <li> 1/2 tsp Turmeric powder</li>
+        <li> 1 tsp Cumin-coriander powder</li>
+        <li> 1/2 tsp Cinnamon & clove powder</li>
+        <li> 3 cups Water (or as required to adjust the consistency)</li>
+        <li> To make usal:</li>
+        <li> 3 tbsp Oil</li>
+        <li> 1 tsp Garlic paste</li>
+        <li> 1 tsp Ginger paste</li>
+        <li> 1/2 tsp Hing (asafoetida)</li>
+        <li> 1 1/2 cups Steamed matki (moth) (soaked overnight)</li>
+        <li> 1 cup Potato (cut into square pieces), boiled</li>
+        <li> 1/2 tsp Turmeric powder</li>
+        <li> 1 tsp Garam masala</li>
+        <li> 1/2 tsp Cinnamon-clove powder</li>
+        <li> 1 Lime juice</li>
+        <li> 3 cups Water (or as required)</li>
+        <li> to taste Salt</li>
+        <li>For garnishing:</li>
+        <li>Onion, chopped</li>
+        <li>Mix dry farsan</li>
+        <li>Coriander, chopped</li>
+        <li>To serve with: Paav, slice of lemon</li>
+   
+{% endblock %}
+
+{% block recipe %}
+    <ol>
+        <li>Prepare paste:</li>
+        <li>Heat oil in a pan. Add ginger paste, garlic paste and chopped onion.</li>
+        <li>Saute till the onion is transculent.</li>
+        <li>Now add chopped tomatoes and grated coconut. Mix well and saute it for few minutes.</li>
+        <li>Allow the mixture to cool then grind it into a smooth paste.</li>
+        <h3><u>Pepare gravy/sauce ('Kat' in Marathi):</u></h3>
+        <li>Heat oil in a pan. Add the ready paste into oil and saute it for about 2 minutes.</li>
+        <li>Now add salt, red chilly powder, garam masala, turmeric powder, cumin-coriander powder, clove-cinnamon powder and mix it.</li>
+        <li>Add water and cook till the mixture starts leaving oil.</li>
+        <li>Transfer it in a bowl and keep it aside.</li>
+        <h3> <u>Prepare Usal:</u></h3>
+        <li>Heat oil in a pan. Add ginger paste, garlic paste and asafoetida.</li>
+        <li>Saute it for a minute and add soaked & boiled sprouts along with potatoes. Mix it well.</li>
+        <li>Now add salt, turmeric powder, garam masala, clove-cinnamon powder and lime juice.</li>
+        <li>Add water to it and cook it for about 8-10 minutes.</li>
+        <li>Transfer it in a separate bowl.</li>
+        <h3> <u>Prepare Misal:</u></h3>
+        <li>Take a serving bowl. First pour ready usal in the bowl and then pour the red gravy over it.</li>
+        <li>Thereafter, add finely chopped onion and farsan to the mixture.</li>
+        <li>Garnish it with chopped coriander. Serve it with pav and a slice of lemon</li>
+
+    </ol>
+{% endblock %}
+
+{% block nutrition %}
+Carbs: 43g, Fats:7.8g, Protien:6.6g
+{% endblock %}

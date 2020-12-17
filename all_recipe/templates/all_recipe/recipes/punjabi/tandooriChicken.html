@@ -1,0 +1,69 @@
+{% extends "all_recipe/recipes/recipeLayout.html" %}
+{% load static %}
+
+{% block title %}
+    Tandoori Chicken Recipe
+{% endblock %}
+
+{% block recipeName %}
+    Tandoori Chicken
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'all_recipe/images/punjabi/Tandoori Chicken.png' %}" alt="tandoorichicken" class="center">
+{% endblock %}
+
+{% block description %}
+    A classic chicken starter recipe! This grilled chicken is a popular Punjabi snack that can be served with onion rings and a green chutney. The juicy and full of spice chicken pieces just fill you up with its delectable taste and makes this dish of Tandoori Chicken a must have snack at a dinner party with family or friends.
+{% endblock %}
+
+{% block prepTime %} 05 Min {%endblock%}
+{% block cookTime %} 60 Min {%endblock%} 
+{% block totalTime %} 65 Min {%endblock%} 
+{% block servings %} 4 people {%endblock%} 
+
+{% block ingredients %}
+    <li>8 Large chicken pieces with skin (2 pieces breast, 2 pieces of thighs, a couple of wings)</li>
+    <li>to taste oil</li>
+    <h3><u>For the marinade:</u></h3>
+    <li>4 tsp red chilli paste</li>
+    <li>3 tbsp ginger and garlic paste</li>
+    <li>2 tsp chaat masala</li>
+    <li>1 1/2 tsp tandoori masala</li>
+    <li>1 tbsp oil</li>
+    <li>3 tbsp curd</li>
+    <li>to taste salt</li>
+    <li>1/2 lemon (juiced)</li>
+    <h3><u>For the tandoori masala:</u></h3>
+    <li>2 Cinnamon sticks</li>
+    <li>1 tbsp black peppercorns</li>
+    <li>5 green cardamom</li>
+    <li>3 brown cardamom</li>
+    <li>2 tsp coriander seeds</li>
+    <li>2 tsp cumin seeds</li>
+    <li>3 cloves</li>
+    <li>1 Bay leaf</li>
+    <li>3/4 tsp turmeric</li>
+{% endblock %}
+
+{% block recipe %}
+    <h4 style="font-size: 150%;">Prepare the marinade:</h4>
+    <ol>
+        <li>In a bowl add ginger and garlic paste, red chilli paste, chaat masala, tandoori masala, oil, curd, salt and lemon juice. Mix it well.</li>
+        <li>Rub the marinade on the chicken pieces, over the skin and underneath it. Make small gashes in the chicken pieces for the marinade to coat it nicely.</li>
+        <li>Marinate the chicken pieces for 30 minutes.</li>
+        <li>Char grill the chicken pieces on a griller or tandoor. Baste with oil at regular intervals.</li>
+        <li>Serve with lemon wedges and onion rings.</li>
+    </ol>
+    <h5 style="font-size: 150%;">Prepare tandoori masala:</h5>
+    <ol>
+        <li>In a pan dry roast cinnamon, peppercorns, green cardamom, brown cardamom, coriander seeds, cumin seeds, cloves, bay leaf and turmeric powder.</li>
+        <li>In a mortar and pestle grind the dry roasted spices into a fine powder. Masala is ready.</li>
+        <li>If you are making it in an oven, the temperature needs to be around 250-300 degrees C.</li>
+        <li>Serve hot.</li>
+    </ol>
+{% endblock %}
+
+{% block nutrition %}
+    Energy : 2981 cal, Protein : 29.1 g, Carbohydrates : 17.5 g, Fiber : 14.2g
+{% endblock %}

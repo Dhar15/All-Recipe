@@ -1,0 +1,77 @@
+{% extends "all_recipe/recipes/recipeLayout.html" %}
+{% load static %}
+
+{% block title %}
+Pav Bhaji Recipe
+{% endblock %}
+
+{% block recipeName %}
+Pav Bhaji
+
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'all_recipe/images/maharashtrian/Pav Bhaji.png' %}" alt="Pav Bhaji" class="center" height="500px">
+{% endblock %}
+
+{% block description %}
+How do you get the perfect crackling mutton ribs? Cook them in milk and spices, wrap them up in gram flour batter and fry them till they turn golden.{% endblock %}
+
+{% block prepTime %} 10 Min {%endblock%}
+{% block cookTime %} 60 Min {%endblock%} 
+{% block totalTime %} 70 Min {%endblock%} 
+{% block servings %} 3 people {%endblock%} 
+
+{% block ingredients %}
+    <li>1 tsp oil</li>
+    <li>4 cubes large butter, finely chopped</li>
+    <li>1 cup onion, chopped</li>
+    <li>1 tsp ginger-garlic paste</li>
+    <li>1/2 cup lauki, chopped</li>
+    <li>1/2 cup capsicum, chopped</li>
+    <li>1 cup potatoes, chopped</li>
+    <li>1/2 cup beetroot, chopped</li>
+    <li>2 tsp salt</li>
+    <li>1 tsp chili powder</li>
+    <li>3 tsp pav bhaji masala</li>
+    <li>1 tsp red chili powder</li>
+    <li>1/2 cup tomato puree</li>
+    <li>1 cube butter</li>
+    <li>1 bunch coriander leaves</li>
+    <li>For Pav:</li>
+    <li>Butter</li>
+    <li>Pav</li>
+    <li>Pav bhaji masala</li>
+{% endblock %}
+
+{% block recipe %}
+    <ol>
+        <li>Heat oil in a pan. Add cubes of butter along with onion</li>
+        <img src="{% static 'all_recipe/images/maharashtrian/pav1.jpg' %}" alt="pav1" class="smol">
+        <li>Saute till golden brown and then add ginger garlic paste. Mix well.</li>
+        <img src="{% static 'all_recipe/images/maharashtrian/pav2.jpg' %}" alt="pav2" class="smol">
+        <li>Now add chopped lauki along with coriander and mix well, followed by a cup of chopped potatoes. Mix and mash well together.</li>
+        <img src="{% static 'all_recipe/images/maharashtrian/pav3.jpg' %}" alt="pav3" class="smol">
+        <li>Add chopped beetroot, salt, chilli powder and pav bhaji masala to the mashed mixture. Mix well.</li>
+        <img src="{% static 'all_recipe/images/maharashtrian/pav4.jpg' %}" alt="pav4" class="smol">
+        <li>Now add the tomato puree</li>
+        <img src="{% static 'all_recipe/images/maharashtrian/pav5.jpg' %}" alt="pav5" class="smol">
+        <li>Mix the tomato puree thoroughly and then add butter followed by coriander leaves to the cooked bhaaji. Mix thoroughly.</li>
+        <img src="{% static 'all_recipe/images/maharashtrian/pav6.jpg' %}" alt="pav6" class="smol">
+        <h3> <u> Now, prepare Pav: </u></h3>
+        <li>Spread some butter all over the pav.</li>
+        <img src="{% static 'all_recipe/images/maharashtrian/pav7.jpg' %}" alt="pav7" class="smol">
+        <li>Sprinkle pav bhaji masala over it.</li>
+        <img src="{% static 'all_recipe/images/maharashtrian/pav8.jpg' %}" alt="pav8" class="smol">
+        <li>Toast it on the pan for a while till it becomes golden brown.</li>
+        <img src="{% static 'all_recipe/images/maharashtrian/pav9.jpg' %}" alt="pav9" class="smol">
+        <li>Serve hot along with a lemon wedge, chopped onion and green chilli.</li>
+        <img src="{% static 'all_recipe/images/maharashtrian/pav10.jpg' %}" alt="pav10" class="smol">
+
+
+    </ol>
+{% endblock %}
+
+{% block nutrition %}
+Carbs: 43g, Fats:7.8g, Protien:6.6g
+{% endblock %}
