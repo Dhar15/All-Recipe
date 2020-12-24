@@ -14,15 +14,22 @@ This website is the outcome of my Web Development (17CS71) mini-project, built u
 
 `Feedback Page` - Users can give their review about the website by filling a feedback form. The details would get stored in the Django Admin interface.
 
-`Meet the team` - This page introduces the users to the developers. Users can view the creators and their role, and can also connect with them through various platforms like LinkedIn, GitHub or can mail them in case of a query. 
+- `Meet the team` - This page introduces the users to the developers. Users can view the creators and their role, and can also connect with them through various platforms like LinkedIn, GitHub or can mail them in case of a query. 
 
-`Share Page` - At the bottom of each recipe, users will find various social media platform buttons which they can click on to share the whole recipe page using the desired networking site. Few of them are Facebook, Twitter, Reddit, etc.
+- `Share Page` - At the bottom of each recipe, users will find various social media platform buttons which they can click on to share the whole recipe page using the desired networking site. Few of them are Facebook, Twitter, Reddit, etc.
 
 ### RUNNING THE PROJECT
 
-In order to run the all-recipe project, simply run the following command on your terminal - 
+In order to run the all-recipe project, first make all migrations to load the models into database by running the following commands on terminal - 
+```
+python manage.py makemigrations
+```
+```
+python manage.py migrate
+```
+
+Finally, to run the server, type this line your terminal - 
 ```
 python manage.py runserver
 ```
 Finally, visit the browser and enter `http://127.0.0.1:8000/all_recipe/` to view the project. 
-
