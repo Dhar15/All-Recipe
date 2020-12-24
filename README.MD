@@ -12,7 +12,7 @@ This website is the outcome of my Web Development (17CS71) mini-project, built u
 
 - `Recipe Page` - The recipe page of each dish consists of a detailed information about the dish and its recipe. It gives a brief description of the dish selected, the ingredients required to prepare it, nutrition info, along with nutrition facts of the dish, and finally - a summarized recipe to cook it along with necessary images.
 
-`Feedback Page` - Users can give their review about the website by filling a feedback form. The details would get stored in the Django Admin interface.
+- `Feedback Page` - Users can give their review about the website by filling a feedback form. The details would get stored in the Django Admin interface.
 
 - `Meet the team` - This page introduces the users to the developers. Users can view the creators and their role, and can also connect with them through various platforms like LinkedIn, GitHub or can mail them in case of a query. 
 
@@ -28,7 +28,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-Finally, to run the server, type this line your terminal - 
+To run the server, type this line your terminal - 
 ```
 python manage.py runserver
 ```
