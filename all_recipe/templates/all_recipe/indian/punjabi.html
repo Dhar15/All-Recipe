@@ -4,55 +4,80 @@
     Punjabi Dishes
 {% endblock %}
 
+{% block css %}
+    <style>
+        body {
+            background-image: linear-gradient(#feada6, #f5efef);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-container > div {
+            width: 400px;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 12px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        img {
+            height: 200px;
+        }
+    </style>
+{% endblock %}
+
 {% block body %}
 
     <a href="{% url 'index' %}"> <i class="fa fa-home" style="float: left; font-size: 35px; padding: 10px; margin-left: 10px;"></i> </a>
 
     <h1 style="text-align:center; font-style: italic;"> Punjabi Recipes </h1>
 
-    <div style="padding: 30px;">
-
-        <div class="row">
-            <div class="column">
-                <button onclick="window.location='{% url 'butterChicken' %}';">
-                <img src="{% static 'all_recipe/images/punjabi/Butter Chicken.png' %}" alt="Butter Chicken" style="width:100%">
-                <h3> Butter Chicken </h3>
-                </button>
-            </div>
-            <div class="column">
-                <button onclick="window.location='{% url 'amritsariFish' %}';">
-                <img src="{% static 'all_recipe/images/punjabi/Amritsari Fish.png' %}" alt="Amritsari Fish" style="width:100%">
-                <h3> Amritsari Fish </h3>
-                </button>
-            </div>
-            <div class="column">
-                <button onclick="window.location='{% url 'tandooriChicken' %}';">
-                <img src="{% static 'all_recipe/images/punjabi/Tandoori Chicken.png' %}" alt="Tandoori Chicken" style="width:100%">
-                <h3> Tandoori Chicken </h3>
-                </button>
-            </div>
+    <div class="flex-container">
+        <div>
+            <button onclick="window.location='{% url 'butterChicken' %}';">
+            <img src="{% static 'all_recipe/images/punjabi/Butter Chicken.png' %}" alt="Butter Chicken" style="width:100%">
+            <h3> Butter Chicken </h3>
+            </button>
         </div>
-
-        <div class="row">
-            <div class="column">
-                <button onclick="window.location='{% url 'dalMakhani' %}';">
-                <img src="{% static 'all_recipe/images/punjabi/Dal Makhani.png' %}" alt="Dal Makhani" style="width:100%">
-                <h3> Dal Makhani </h3>
-                </button>
-            </div>
-            <div class="column">
-                <button onclick="window.location='{% url 'choleBhature' %}';">
-                <img src="{% static 'all_recipe/images/punjabi/Chole Bhature.png' %}" alt="Chole Bhature" style="width:100%">
-                <h3> Chole Bhature </h3>
-                </button>
-            </div>
-            <div class="column">
-                <button onclick="window.location='{% url 'sarsonSaag' %}';">
-                    <img src="{% static 'all_recipe/images/punjabi/Sarson Ka Saag Aur Makki ki Roti.png' %}" alt="Sarson Ka Saag Aur Makki ki Roti" style="width:100%">
-                    <h3> Sarson Ka Saag Aur Makki ki Roti </h3>
-                </button>
-            </div>
+        <div>
+            <button onclick="window.location='{% url 'amritsariFish' %}';">
+            <img src="{% static 'all_recipe/images/punjabi/Amritsari Fish.png' %}" alt="Amritsari Fish" style="width:100%">
+            <h3> Amritsari Fish </h3>
+            </button>
         </div>
+        <div>
+            <button onclick="window.location='{% url 'tandooriChicken' %}';">
+            <img src="{% static 'all_recipe/images/punjabi/Tandoori Chicken.png' %}" alt="Tandoori Chicken" style="width:100%">
+            <h3> Tandoori Chicken </h3>
+            </button>
+        </div>
+        <div>
+            <button onclick="window.location='{% url 'dalMakhani' %}';">
+            <img src="{% static 'all_recipe/images/punjabi/Dal Makhani.png' %}" alt="Dal Makhani" style="width:100%">
+            <h3> Dal Makhani </h3>
+            </button>
+        </div>
+        <div>
+            <button onclick="window.location='{% url 'choleBhature' %}';">
+            <img src="{% static 'all_recipe/images/punjabi/Chole Bhature.png' %}" alt="Chole Bhature" style="width:100%">
+            <h3> Chole Bhature </h3>
+            </button>
+        </div>
+        <div>
+            <button onclick="window.location='{% url 'sarsonSaag' %}';">
+                <img src="{% static 'all_recipe/images/punjabi/Sarson Ka Saag Aur Makki ki Roti.png' %}" alt="Sarson Ka Saag Aur Makki ki Roti" style="width:100%">
+                <h3> Sarson Ka Saag Aur Makki ki Roti </h3>
+            </button>
+        </div>
+    </div>
     </div>
     
 {% endblock %}
