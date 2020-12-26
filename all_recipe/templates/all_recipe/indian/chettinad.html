@@ -4,55 +4,80 @@
     Chettinad Dishes
 {% endblock %}
 
+{% block css %}
+    <style>
+        body {
+            background-image: linear-gradient(#feada6, #f5efef);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-container > div {
+            width: 400px;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 12px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        img {
+            height: 200px;
+        }
+    </style>
+{% endblock %}
+
 {% block body %}
 
     <a href="{% url 'index' %}"> <i class="fa fa-home" style="float: left; font-size: 35px; padding: 10px; margin-left: 10px;"></i> </a>
 
     <h1 style="text-align:center; font-style: italic;"> Chettinad Recipes </h1>
 
-    <div style="padding: 30px;">
-
-        <div class="row">
-            <div class="column">
-                <button onclick="window.location='{% url 'chettinadChicken' %}';">
-                <img src="{% static 'all_recipe/images/chettinad/Chicken Chettinad.png' %}" alt="Chicken Chettinad" style="width:100%">
-                <h3> Chicken Chettinad </h3>
-                </button>
-            </div>
-            <div class="column">
-                <button onclick="window.location='{% url 'fishFry' %}';">
-                <img src="{% static 'all_recipe/images/chettinad/Chettinad Fish Fry.png' %}" alt="Fish Fry" style="width:100%">
-                <h3> Chettinad Fish Fry </h3>
-                </button>
-            </div>
-            <div class="column">
-                <button onclick="window.location='{% url 'eggCurry' %}';">
-                <img src="{% static 'all_recipe/images/chettinad/Chettinad Egg Curry.png' %}" alt="Egg Curry" style="width:100%">
-                <h3> Chettinad Egg Curry </h3>
-                </button>
-            </div>
+    <div class="flex-container">
+        <div>
+            <button onclick="window.location='{% url 'chettinadChicken' %}';">
+            <img src="{% static 'all_recipe/images/chettinad/Chicken Chettinad.png' %}" alt="Chicken Chettinad" style="width:100%">
+            <h3> Chicken Chettinad </h3>
+            </button>
         </div>
-
-        <div class="row">
-            <div class="column">
-                <button onclick="window.location='{% url 'mushroom' %}';">
-                <img src="{% static 'all_recipe/images/chettinad/Mushroom Chettinad.png' %}" alt="Mushroom Chettinad" style="width:100%">
-                <h3> Mushroom Chettinad </h3>
-                </button>
-            </div>
-            <div class="column">
-                <button onclick="window.location='{% url 'aatukkariKuzhambu' %}';">
-                <img src="{% static 'all_recipe/images/chettinad/Aatukkari Kuzhambu with Steamed Rice.png' %}" alt="Aatukkari Kuzhambu with Steamed Rice" style="width:100%">
-                <h3> Aatukkari Kuzhambu & Steamed Rice </h3>
-                </button>
-            </div>
-            <div class="column">
-                <button onclick="window.location='{% url 'paalPayasam' %}';">
-                    <img src="{% static 'all_recipe/images/chettinad/Paal Payasam.png' %}" alt="Paal Payasam" style="width:100%">
-                    <h3> Paal Payasam </h3>
-                </button>
-            </div>
+        <div>
+            <button onclick="window.location='{% url 'fishFry' %}';">
+            <img src="{% static 'all_recipe/images/chettinad/Chettinad Fish Fry.png' %}" alt="Fish Fry" style="width:100%">
+            <h3> Chettinad Fish Fry </h3>
+            </button>
         </div>
+        <div>
+            <button onclick="window.location='{% url 'eggCurry' %}';">
+            <img src="{% static 'all_recipe/images/chettinad/Chettinad Egg Curry.png' %}" alt="Egg Curry" style="width:100%">
+            <h3> Chettinad Egg Curry </h3>
+            </button>
+        </div>
+        <div>
+            <button onclick="window.location='{% url 'mushroom' %}';">
+            <img src="{% static 'all_recipe/images/chettinad/Mushroom Chettinad.png' %}" alt="Mushroom Chettinad" style="width:100%">
+            <h3> Mushroom Chettinad </h3>
+            </button>
+        </div>
+        <div>
+            <button onclick="window.location='{% url 'aatukkariKuzhambu' %}';">
+            <img src="{% static 'all_recipe/images/chettinad/Aatukkari Kuzhambu with Steamed Rice.png' %}" alt="Aatukkari Kuzhambu with Steamed Rice" style="width:100%">
+            <h3> Aatukkari Kuzhambu & Steamed Rice </h3>
+            </button>
+        </div>
+        <div>
+            <button onclick="window.location='{% url 'paalPayasam' %}';">
+            <img src="{% static 'all_recipe/images/chettinad/Paal Payasam.png' %}" alt="Paal Payasam" style="width:100%">
+            <h3> Paal Payasam </h3>
+            </button>
+        </div>
+    </div>
     </div>
     
 {% endblock %}
