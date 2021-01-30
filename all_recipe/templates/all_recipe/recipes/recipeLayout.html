@@ -4,7 +4,7 @@
 <html>
   <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> {% block title%} {% endblock %} </title>
+    	<title> {% block title%} {% endblock %} </title>
 	<link rel="stylesheet" href="{% static 'all_recipe/recipe.css' %}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fd0a57b13d71d0018432326&product=inline-share-buttons" async="async"></script>
@@ -45,22 +45,23 @@
 	<hr />
 
 	<section>
-        <h3 style="font-size:150%; font-family: cursive;">Recipe</h3>
+		<h3 style="font-size:150%; font-family: cursive;">Recipe</h3>
 		{% block recipe %} {% endblock %}
-    </section>
-    <hr />
+    	</section>
+    	<hr />
     
-    <section> 
-        <h3 style="font-size:150%; font-family: cursive;">Nutrition Facts </h3>
-        <h4 style="font-weight: bold;"> Per Serving: </h4>
-        {% block nutrition %} {% endblock %}
+    	<section> 
+		<h3 style="font-size:150%; font-family: cursive;">Nutrition Facts </h3>
+		<h4 style="font-weight: bold;"> Per Serving: </h4>
+		{% block nutrition %} {% endblock %}
 	</section>
 
-	<br /> <br/> <br/>
-
-	<h5 style="text-align: center; color: purple;"> Share this recipe with your friends: </h5>
-
-	<div class="sharethis-inline-share-buttons"></div>
+	<br /> <br/> 
+	  
+	<footer>
+		<h5 style="text-align: center; color: purple;"> Share this recipe with your friends: </h5>
+		<div class="sharethis-inline-share-buttons"></div>
+	</footer>
 	
   </body>
 </html>
